@@ -1,0 +1,35 @@
+<html>
+	<head>
+		<title>Hypnosis Spiral</title>
+	</head>
+	
+	<body style= "background: black; text-align: center">
+		<h1 style="color: red">Hypnose spiraal</h1>
+		    <p style="font-size: 10 px; color: red"> First read disclaimer. For real experiance push button 10 times per second!
+	    	</p>
+		
+		<section>
+		    <p>
+		        <img id="imgspiraal" src="http://orig07.deviantart.net/e3c4/f/2012/338/5/5/hypnosis_spiral_by_dreamwalker70-d5n2p1s.jpg"/>
+            </p>
+		    <p>
+		        <button name="button" onclick="alert('ATTENTION: Do not watch this when you are pregnant, old or working on an essay!')"> Disclaimer</button>
+		        <button name="button" onclick="turnImage()">Hypnotise me!</button>
+		    </p>
+		</section>
+		
+		<script>
+		    console.log("Even kijken of het werkt!");
+		    var Image=document.getElementById("imgspiraal");
+		    var Rotation = 0;
+	        Image.style.width="300px";
+	        Image.style.transition = "all 0.5s";
+	        var turnImage=function() {
+	            console.log("Hai");
+	            Rotation = Rotation + 90;
+	            Image.style.transform = 'rotate('+Rotation+'deg)'; 
+	        }
+		</script>
+		
+	</body>
+</html>
